@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 900px) {
+  * {
+    font-size: 100%;
+    word-break: normal;
+    line-break: normal;
+  }
+  * p {
+    font-size: 13px;
+  }
+  * h1 {
+    margin-left: 0rem;
+  }
+}
+
+.headings h1 {
+  color: #2256e6;
+}
+
+hr {
+  width: 10%;
+  height: 5px;
+  background: #2256e6;
+  margin: .8rem rem;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header hr {
+  margin: 2rem;
+}
+
+header h1 {
+  margin: .4rem 2rem;
+}
+
+header p {
+  margin: 0rem 2rem 1rem 2rem;
+  color: #2256e6;
+}
+
+header img {
+  width: 15rem;
+  margin: 1rem 2rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+#resumeIntro {
+  margin: 0rem 2rem 1rem 2rem;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "A A A A   A A A A   A A B B" "A A A A   A A A A   A A B B" "A A A A   A A A A   A A C C" "A A A A   A A A A   A A C C" "A A A A   A A A A   A A C C";
+  gap: 20px;
+  margin-left: 2rem;
+}
+
+.container .workHistory {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 14;
+  grid-area: A;
+}
+
+.container .contact {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 15;
+  -ms-grid-column-span: 2;
+  grid-area: B;
+}
+
+.container .skills {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 2;
+  grid-area: C;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.workHistory .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.workHistory .heading .dates {
+  margin-right: 2rem;
+  word-wrap: normal;
+}
+
+@media (max-width: 900px) {
+  .workHistory .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.workHistory .heading p {
+  margin: .3rem 0rem;
+}
+
+.lastsection {
+  margin: 1rem 2rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "A A A A   A A A A  A A A A   A A B B" "A A A A   A A A A  A A A A   A A B B" "A A A A   A A A A  A A A A   A A B B" "A A A A   A A A A  A A A A   A A B B";
+}
+
+@media (max-width: 900px) {
+  .lastsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.education {
+  margin-bottom: 2rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 14;
+  grid-area: A;
+}
+
+.certifications {
+  margin-bottom: 2rem;
+}
+
+.secttwo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 15;
+  -ms-grid-column-span: 2;
+  grid-area: B;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.secttwo img {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .secttwo img {
+    width: 6rem;
+  }
+}
+
+.secttwo a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  background-color: #2256e6;
+}
+
+.secttwo p {
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #2256e6;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 0.4rem;
+}
+
+footer :hover {
+  background-color: white;
+  color: #2256e6;
+}
+/*# sourceMappingURL=main.css.map */
